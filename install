@@ -1,0 +1,18 @@
+#!/bin/bash
+
+DESTDIR=$HOME/.config/fish
+SCRIPTDIR=$(dirname "$(readlink -f "$0")")
+
+echo "This will install jfish to '$DESTDIR'."
+read -p "Do you wish to continue? (Yy): " -n 1 -r
+echo
+
+if ! [[ $REPLY =~ ^[Yy] ]]; then
+	echo Operation aborted.
+	exit 1
+fi
+
+cp -uv "$SCRIPTDIR/functions/j.fish" "$DESTDIR/functions/"
+cp -uv "$SCRIPTDIR/completions/j.fish" "$DESTDIR/completions/"
+
+echo 'Done!'
