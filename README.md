@@ -50,35 +50,33 @@ If you decide you don't want that bookmark anymore, you can remove it with:
 $ j remove mybookmark2
 ```
 
-
 ## List of Subcommands
 
-### `j add <bookmark>`
+ * `j add <bookmark>`
 
-Adds the current working directory as a bookmark with the name `<bookmark>`.
+    Adds the current working directory as a bookmark with the name `<bookmark>`.
 
-### `j to <bookmark>`
+ * `j to <bookmark>`
 
-Changes the directory to the one represented by`<bookmark>`.
+    Changes the directory to the one represented by`<bookmark>`.
 
-### `j remove <bookmark>` or `j rm <bookmark>`
+ * `j remove <bookmark>` or `j rm <bookmark>`
 
-Removes the bookmark with the name `<bookmark>`.
+    Removes the bookmark with the name `<bookmark>`.
 
-### `j list` or `j ls`
+ * `j list` or `j ls`
 
-Lists all bookmarks.
+    Lists all bookmarks.
 
-### `j rename <src> <dest>` or `j mv <src> <dest>`
+ * `j rename <src> <dest>` or `j mv <src> <dest>`
 
-Renames the bookmark `<src>` to `<dest>`.
-
+    Renames the bookmark `<src>` to `<dest>`.
 
 ## Installation
 
 ### Automatic
 
-Run the `install` script in the root directory of the project to install:
+Run the `install` script to install:
 
 ```bash
 $ ./install
@@ -86,15 +84,11 @@ $ ./install
 
 ### Manual
 
-Copy the directories `functions/` and `completions/` to `~/.config/fish/`:
-
 ```bash
 cp -r functions/ completions/ ~/.config/fish/
 ```
 
 ## Uninstallation
-
-Just run
 
 ```bash
 rm ~/.config/fish/functions/j.fish
