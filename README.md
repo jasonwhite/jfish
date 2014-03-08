@@ -83,5 +83,5 @@ cp -r functions/ completions/ ~/.config/fish/
 ```bash
 rm ~/.config/fish/functions/j.fish
 rm ~/.config/fish/completions/j.fish
-rm -r ~/.gofish/
+rm -r ~/.jfish/
 ```
