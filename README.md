@@ -74,16 +74,6 @@ $ j remove mybookmark2
 
 ## Installation
 
-### Automatic
-
-Run the `install` script to install:
-
-```bash
-$ ./install
-```
-
-### Manual
-
 ```bash
 cp -r functions/ completions/ ~/.config/fish/
 ```
