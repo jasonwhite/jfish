@@ -9,34 +9,46 @@ supported.
 
 Just `cd` to the desired directory and add it as a bookmark:
 
-	> cd a/far/away/directory/
-	> j add mybookmark
+```bash
+$ cd a/far/away/directory/
+$ j add mybookmark
+```
 
 You can jump to it later with:
 
-	> j to mybookmark
+```bash
+$ j to mybookmark
+```
 
 Bookmark names work with tab-completion. Typing part of the name and pressing
 `<tab>` will complete it:
 
-	> j to myb<tab>
+```bash
+$ j to myb<tab>
+```
 
 You can also list all the bookmarks that have been set:
 
-	> j list
-	mybookmark
+```bash
+$ j list
+mybookmark
+```
 
 Bookmarks can be renamed as well:
 
-	> j list
-	mybookmark
-	> j rename mybookmark mybookmark2
-	> j list
-	mybookmark2
+```bash
+$ j list
+mybookmark
+$ j rename mybookmark mybookmark2
+$ j list
+mybookmark2
+```
 
 If you decide you don't want that bookmark anymore, you can remove it with:
 
-	> j remove mybookmark2
+```bash
+$ j remove mybookmark2
+```
 
 
 ## List of Subcommands
@@ -68,18 +80,24 @@ Renames the bookmark `<src>` to `<dest>`.
 
 Run the `install` script in the root directory of the project to install:
 
-	> ./install
+```bash
+$ ./install
+```
 
 ### Manual
 
 Copy the directories `functions/` and `completions/` to `~/.config/fish/`:
 
-	cp -r functions/ completions/ ~/.config/fish/
+```bash
+cp -r functions/ completions/ ~/.config/fish/
+```
 
 ## Uninstallation
 
-Just run these commands:
+Just run
 
-	rm ~/.config/fish/functions/j.fish
-	rm ~/.config/fish/completions/j.fish
-	rm -r ~/.gofish/
+```bash
+rm ~/.config/fish/functions/j.fish
+rm ~/.config/fish/completions/j.fish
+rm -r ~/.gofish/
+```
